@@ -1,0 +1,1028 @@
+[2m2025-07-29T04:07:27.971857Z[0m [32m INFO[0m [2mbevy_server[0m[2m:[0m Starting Bevy WebSocket server on 127.0.0.1:8080
+[2m2025-07-29T04:07:27.971949Z[0m [32m INFO[0m [2mbevy_server[0m[2m:[0m Stats enabled: true
+[2m2025-07-29T04:07:27.971960Z[0m [32m INFO[0m [2mbevy_server[0m[2m:[0m Broadcasting enabled: true
+[2m2025-07-29T04:07:27.971972Z[0m [32m INFO[0m [2mbevy_server[0m[2m:[0m Broadcast message size: 100 bytes
+[2m2025-07-29T04:07:27.975720Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy WebSocket server listening on: 127.0.0.1:8080
+[2m2025-07-29T04:07:27.975776Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcasting enabled at 20Hz via FixedUpdate
+[2m2025-07-29T04:07:32.977180Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy Stats - Connections: 0, Total Messages: 0, Messages/sec: 0.00, Dropped: 0, Slow Clients: 0, Pending: 0, Max Pending: 0
+[2m2025-07-29T04:07:35.827405Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59422
+[2m2025-07-29T04:07:35.827820Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59422
+[2m2025-07-29T04:07:35.828078Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59422
+[2m2025-07-29T04:07:35.828152Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59422
+[2m2025-07-29T04:07:35.828230Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59422
+[2m2025-07-29T04:07:35.828501Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 1/1 connections (0 failed)
+[2m2025-07-29T04:07:35.828765Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59420
+[2m2025-07-29T04:07:35.828901Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59420
+[2m2025-07-29T04:07:35.829435Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59416
+[2m2025-07-29T04:07:35.829611Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59416
+[2m2025-07-29T04:07:35.830253Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59418
+[2m2025-07-29T04:07:35.830365Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59418
+[2m2025-07-29T04:07:35.830879Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59426
+[2m2025-07-29T04:07:35.830987Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59426
+[2m2025-07-29T04:07:35.831522Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59424
+[2m2025-07-29T04:07:35.831630Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59424
+[2m2025-07-29T04:07:35.832186Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59496
+[2m2025-07-29T04:07:35.832296Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59496
+[2m2025-07-29T04:07:35.832818Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59482
+[2m2025-07-29T04:07:35.832923Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59482
+[2m2025-07-29T04:07:35.833452Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59502
+[2m2025-07-29T04:07:35.833561Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59502
+[2m2025-07-29T04:07:35.834110Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59508
+[2m2025-07-29T04:07:35.834237Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59508
+[2m2025-07-29T04:07:35.834788Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59466
+[2m2025-07-29T04:07:35.834951Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59466
+[2m2025-07-29T04:07:35.835363Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59516
+[2m2025-07-29T04:07:35.835474Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59516
+[2m2025-07-29T04:07:35.835985Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59518
+[2m2025-07-29T04:07:35.836083Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59518
+[2m2025-07-29T04:07:35.836630Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59532
+[2m2025-07-29T04:07:35.836832Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59532
+[2m2025-07-29T04:07:35.837281Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59548
+[2m2025-07-29T04:07:35.837419Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59548
+[2m2025-07-29T04:07:35.837873Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59568
+[2m2025-07-29T04:07:35.837978Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59568
+[2m2025-07-29T04:07:35.838555Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59556
+[2m2025-07-29T04:07:35.838665Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59556
+[2m2025-07-29T04:07:35.839220Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59582
+[2m2025-07-29T04:07:35.839327Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59582
+[2m2025-07-29T04:07:35.839846Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59594
+[2m2025-07-29T04:07:35.839971Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59594
+[2m2025-07-29T04:07:35.840499Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59610
+[2m2025-07-29T04:07:35.840604Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59610
+[2m2025-07-29T04:07:35.841143Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59612
+[2m2025-07-29T04:07:35.841242Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59612
+[2m2025-07-29T04:07:35.841741Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59642
+[2m2025-07-29T04:07:35.841844Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59642
+[2m2025-07-29T04:07:35.842393Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59630
+[2m2025-07-29T04:07:35.842491Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59630
+[2m2025-07-29T04:07:35.843038Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59646
+[2m2025-07-29T04:07:35.843158Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59646
+[2m2025-07-29T04:07:35.843658Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59654
+[2m2025-07-29T04:07:35.843765Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59654
+[2m2025-07-29T04:07:35.844282Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59660
+[2m2025-07-29T04:07:35.844391Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59660
+[2m2025-07-29T04:07:35.844936Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59662
+[2m2025-07-29T04:07:35.845037Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59662
+[2m2025-07-29T04:07:35.845583Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59678
+[2m2025-07-29T04:07:35.845695Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59678
+[2m2025-07-29T04:07:35.846210Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59682
+[2m2025-07-29T04:07:35.846312Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59682
+[2m2025-07-29T04:07:35.846839Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59692
+[2m2025-07-29T04:07:35.846949Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59692
+[2m2025-07-29T04:07:35.847490Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59716
+[2m2025-07-29T04:07:35.847589Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59716
+[2m2025-07-29T04:07:35.848171Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59718
+[2m2025-07-29T04:07:35.848278Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59718
+[2m2025-07-29T04:07:35.848836Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59702
+[2m2025-07-29T04:07:35.848945Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59702
+[2m2025-07-29T04:07:35.849498Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59736
+[2m2025-07-29T04:07:35.849605Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59736
+[2m2025-07-29T04:07:35.850189Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59734
+[2m2025-07-29T04:07:35.850288Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59734
+[2m2025-07-29T04:07:35.850805Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59764
+[2m2025-07-29T04:07:35.850921Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59764
+[2m2025-07-29T04:07:35.851538Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59766
+[2m2025-07-29T04:07:35.851664Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59766
+[2m2025-07-29T04:07:35.852232Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59768
+[2m2025-07-29T04:07:35.852334Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59768
+[2m2025-07-29T04:07:35.852903Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59790
+[2m2025-07-29T04:07:35.853025Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59790
+[2m2025-07-29T04:07:35.853558Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59788
+[2m2025-07-29T04:07:35.853664Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59788
+[2m2025-07-29T04:07:35.854197Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59808
+[2m2025-07-29T04:07:35.854302Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59808
+[2m2025-07-29T04:07:35.854820Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59814
+[2m2025-07-29T04:07:35.854915Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59814
+[2m2025-07-29T04:07:35.855317Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59828
+[2m2025-07-29T04:07:35.855375Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59828
+[2m2025-07-29T04:07:35.855566Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59826
+[2m2025-07-29T04:07:35.855773Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59854
+[2m2025-07-29T04:07:35.855878Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59854
+[2m2025-07-29T04:07:35.855881Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59826
+[2m2025-07-29T04:07:35.855987Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59870
+[2m2025-07-29T04:07:35.856478Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59702
+[2m2025-07-29T04:07:35.856505Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59426
+[2m2025-07-29T04:07:35.856523Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59702
+[2m2025-07-29T04:07:35.856567Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59702
+[2m2025-07-29T04:07:35.856594Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59426
+[2m2025-07-29T04:07:35.856604Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59420
+[2m2025-07-29T04:07:35.856611Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59426
+[2m2025-07-29T04:07:35.856626Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59420
+[2m2025-07-29T04:07:35.856637Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59420
+[2m2025-07-29T04:07:35.856675Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59516
+[2m2025-07-29T04:07:35.856691Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59516
+[2m2025-07-29T04:07:35.856708Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59516
+[2m2025-07-29T04:07:35.856748Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59716
+[2m2025-07-29T04:07:35.856775Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59716
+[2m2025-07-29T04:07:35.856782Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59654
+[2m2025-07-29T04:07:35.857234Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59646
+[2m2025-07-29T04:07:35.857278Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59548
+[2m2025-07-29T04:07:35.856980Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59424
+[2m2025-07-29T04:07:35.857338Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59630
+[2m2025-07-29T04:07:35.857360Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59660
+[2m2025-07-29T04:07:35.857384Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59662
+[2m2025-07-29T04:07:35.857448Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59532
+[2m2025-07-29T04:07:35.857237Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59736
+[2m2025-07-29T04:07:35.856952Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59872
+[2m2025-07-29T04:07:35.856999Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59870
+[2m2025-07-29T04:07:35.857563Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59764
+[2m2025-07-29T04:07:35.857579Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59418
+[2m2025-07-29T04:07:35.857422Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59416
+[2m2025-07-29T04:07:35.857568Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59872
+[2m2025-07-29T04:07:35.857455Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59718
+[2m2025-07-29T04:07:35.857689Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59642
+[2m2025-07-29T04:07:35.857701Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59496
+[2m2025-07-29T04:07:35.857264Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59518
+[2m2025-07-29T04:07:35.857772Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59612
+[2m2025-07-29T04:07:35.857664Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59734
+[2m2025-07-29T04:07:35.857577Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59508
+[2m2025-07-29T04:07:35.857842Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59594
+[2m2025-07-29T04:07:35.857851Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59828
+[2m2025-07-29T04:07:35.857883Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59808
+[2m2025-07-29T04:07:35.857889Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59678
+[2m2025-07-29T04:07:35.857917Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59582
+[2m2025-07-29T04:07:35.857851Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59768
+[2m2025-07-29T04:07:35.857953Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59466
+[2m2025-07-29T04:07:35.857976Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59610
+[2m2025-07-29T04:07:35.857984Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59482
+[2m2025-07-29T04:07:35.857918Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59682
+[2m2025-07-29T04:07:35.858026Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59874
+[2m2025-07-29T04:07:35.858003Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59568
+[2m2025-07-29T04:07:35.857858Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59790
+[2m2025-07-29T04:07:35.858071Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59692
+[2m2025-07-29T04:07:35.858102Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59788
+[2m2025-07-29T04:07:35.858352Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59502
+[2m2025-07-29T04:07:35.858144Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59826
+[2m2025-07-29T04:07:35.858105Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59814
+[2m2025-07-29T04:07:35.858423Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59872
+[2m2025-07-29T04:07:35.858472Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59766
+[2m2025-07-29T04:07:35.858516Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59894
+[2m2025-07-29T04:07:35.858384Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59556
+[2m2025-07-29T04:07:35.858572Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59894
+[2m2025-07-29T04:07:35.858675Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59894
+[2m2025-07-29T04:07:35.857107Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59716
+[2m2025-07-29T04:07:35.858482Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59870
+[2m2025-07-29T04:07:35.858901Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59654
+[2m2025-07-29T04:07:35.858364Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59874
+[2m2025-07-29T04:07:35.858998Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59654
+[2m2025-07-29T04:07:35.858147Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59854
+[2m2025-07-29T04:07:35.858924Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59910
+[2m2025-07-29T04:07:35.859076Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59874
+[2m2025-07-29T04:07:35.859123Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59910
+[2m2025-07-29T04:07:35.859033Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59646
+[2m2025-07-29T04:07:35.859213Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59646
+[2m2025-07-29T04:07:35.859224Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59910
+[2m2025-07-29T04:07:35.859285Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59548
+[2m2025-07-29T04:07:35.859348Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59548
+[2m2025-07-29T04:07:35.859372Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59424
+[2m2025-07-29T04:07:35.859387Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59424
+[2m2025-07-29T04:07:35.859436Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59630
+[2m2025-07-29T04:07:35.859454Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59630
+[2m2025-07-29T04:07:35.859476Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59660
+[2m2025-07-29T04:07:35.859486Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59660
+[2m2025-07-29T04:07:35.859474Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59916
+[2m2025-07-29T04:07:35.859494Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59662
+[2m2025-07-29T04:07:35.859547Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59662
+[2m2025-07-29T04:07:35.859543Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59916
+[2m2025-07-29T04:07:35.859596Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59532
+[2m2025-07-29T04:07:35.859728Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59532
+[2m2025-07-29T04:07:35.859789Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59736
+[2m2025-07-29T04:07:35.859807Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59736
+[2m2025-07-29T04:07:35.859821Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59764
+[2m2025-07-29T04:07:35.859827Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59764
+[2m2025-07-29T04:07:35.859835Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59418
+[2m2025-07-29T04:07:35.859845Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59418
+[2m2025-07-29T04:07:35.859905Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59416
+[2m2025-07-29T04:07:35.859990Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59416
+[2m2025-07-29T04:07:35.860022Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59718
+[2m2025-07-29T04:07:35.860034Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59718
+[2m2025-07-29T04:07:35.860046Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59642
+[2m2025-07-29T04:07:35.860061Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59642
+[2m2025-07-29T04:07:35.859751Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59916
+[2m2025-07-29T04:07:35.860127Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59496
+[2m2025-07-29T04:07:35.860145Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59496
+[2m2025-07-29T04:07:35.860172Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59518
+[2m2025-07-29T04:07:35.860261Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59518
+[2m2025-07-29T04:07:35.860299Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59612
+[2m2025-07-29T04:07:35.860310Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59612
+[2m2025-07-29T04:07:35.860320Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59734
+[2m2025-07-29T04:07:35.860340Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59734
+[2m2025-07-29T04:07:35.860388Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59508
+[2m2025-07-29T04:07:35.860411Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59508
+[2m2025-07-29T04:07:35.860426Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59594
+[2m2025-07-29T04:07:35.860433Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59594
+[2m2025-07-29T04:07:35.860443Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59828
+[2m2025-07-29T04:07:35.860456Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59828
+[2m2025-07-29T04:07:35.860493Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59808
+[2m2025-07-29T04:07:35.860507Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59808
+[2m2025-07-29T04:07:35.860595Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59678
+[2m2025-07-29T04:07:35.860675Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59678
+[2m2025-07-29T04:07:35.860740Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59582
+[2m2025-07-29T04:07:35.860796Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59582
+[2m2025-07-29T04:07:35.860842Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59768
+[2m2025-07-29T04:07:35.860922Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59768
+[2m2025-07-29T04:07:35.860999Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59466
+[2m2025-07-29T04:07:35.861020Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59466
+[2m2025-07-29T04:07:35.861059Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59610
+[2m2025-07-29T04:07:35.861127Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59610
+[2m2025-07-29T04:07:35.861167Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59482
+[2m2025-07-29T04:07:35.861200Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59482
+[2m2025-07-29T04:07:35.861260Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59682
+[2m2025-07-29T04:07:35.861294Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59682
+[2m2025-07-29T04:07:35.861386Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59568
+[2m2025-07-29T04:07:35.861460Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59568
+[2m2025-07-29T04:07:35.861522Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59790
+[2m2025-07-29T04:07:35.861556Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59790
+[2m2025-07-29T04:07:35.861593Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59692
+[2m2025-07-29T04:07:35.861676Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59692
+[2m2025-07-29T04:07:35.861774Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59788
+[2m2025-07-29T04:07:35.861835Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59788
+[2m2025-07-29T04:07:35.861868Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59502
+[2m2025-07-29T04:07:35.861940Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59502
+[2m2025-07-29T04:07:35.862030Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59826
+[2m2025-07-29T04:07:35.862090Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59826
+[2m2025-07-29T04:07:35.862145Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59814
+[2m2025-07-29T04:07:35.862232Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59814
+[2m2025-07-29T04:07:35.862308Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59872
+[2m2025-07-29T04:07:35.862369Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59872
+[2m2025-07-29T04:07:35.862412Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59766
+[2m2025-07-29T04:07:35.862447Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59766
+[2m2025-07-29T04:07:35.862493Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59556
+[2m2025-07-29T04:07:35.862511Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59556
+[2m2025-07-29T04:07:35.862520Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59894
+[2m2025-07-29T04:07:35.862526Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59894
+[2m2025-07-29T04:07:35.862542Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59870
+[2m2025-07-29T04:07:35.862571Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59870
+[2m2025-07-29T04:07:35.862607Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59854
+[2m2025-07-29T04:07:35.862649Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59854
+[2m2025-07-29T04:07:35.862675Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59874
+[2m2025-07-29T04:07:35.862683Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59874
+[2m2025-07-29T04:07:35.862692Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59910
+[2m2025-07-29T04:07:35.862703Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59910
+[2m2025-07-29T04:07:35.862837Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59916
+[2m2025-07-29T04:07:35.862901Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59916
+[2m2025-07-29T04:07:35.875439Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59918
+[2m2025-07-29T04:07:35.875597Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59918
+[2m2025-07-29T04:07:35.875820Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59918
+[2m2025-07-29T04:07:35.875897Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59918
+[2m2025-07-29T04:07:35.875953Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59918
+[2m2025-07-29T04:07:35.876241Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59930
+[2m2025-07-29T04:07:35.876339Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59930
+[2m2025-07-29T04:07:35.876496Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59930
+[2m2025-07-29T04:07:35.876551Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59930
+[2m2025-07-29T04:07:35.876578Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59930
+[2m2025-07-29T04:07:35.876998Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 53/53 connections (0 failed)
+[2m2025-07-29T04:07:35.877252Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59932
+[2m2025-07-29T04:07:35.877359Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59932
+[2m2025-07-29T04:07:35.877511Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59932
+[2m2025-07-29T04:07:35.877566Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59932
+[2m2025-07-29T04:07:35.877589Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59932
+[2m2025-07-29T04:07:35.877795Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59938
+[2m2025-07-29T04:07:35.877901Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59938
+[2m2025-07-29T04:07:35.878039Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59938
+[2m2025-07-29T04:07:35.878093Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59938
+[2m2025-07-29T04:07:35.878130Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59938
+[2m2025-07-29T04:07:35.878445Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59940
+[2m2025-07-29T04:07:35.878551Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59940
+[2m2025-07-29T04:07:35.878710Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59940
+[2m2025-07-29T04:07:35.878773Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59940
+[2m2025-07-29T04:07:35.878802Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59940
+[2m2025-07-29T04:07:35.879015Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59934
+[2m2025-07-29T04:07:35.879134Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59934
+[2m2025-07-29T04:07:35.879287Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59934
+[2m2025-07-29T04:07:35.879334Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59934
+[2m2025-07-29T04:07:35.879372Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59934
+[2m2025-07-29T04:07:35.879671Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59936
+[2m2025-07-29T04:07:35.879772Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59936
+[2m2025-07-29T04:07:35.879898Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59936
+[2m2025-07-29T04:07:35.879953Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59936
+[2m2025-07-29T04:07:35.879986Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59936
+[2m2025-07-29T04:07:35.880346Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59992
+[2m2025-07-29T04:07:35.880446Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59992
+[2m2025-07-29T04:07:35.880578Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59992
+[2m2025-07-29T04:07:35.880632Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59992
+[2m2025-07-29T04:07:35.880654Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59992
+[2m2025-07-29T04:07:35.880917Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:59994
+[2m2025-07-29T04:07:35.881017Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:59994
+[2m2025-07-29T04:07:35.881165Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:59994
+[2m2025-07-29T04:07:35.881212Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:59994
+[2m2025-07-29T04:07:35.881254Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:59994
+[2m2025-07-29T04:07:35.881588Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:60022
+[2m2025-07-29T04:07:35.881687Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:60022
+[2m2025-07-29T04:07:35.881817Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:60022
+[2m2025-07-29T04:07:35.881874Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:60022
+[2m2025-07-29T04:07:35.881899Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:60022
+[2m2025-07-29T04:07:35.882230Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:60024
+[2m2025-07-29T04:07:35.882333Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:60024
+[2m2025-07-29T04:07:35.882465Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:60024
+[2m2025-07-29T04:07:35.882530Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:60024
+[2m2025-07-29T04:07:35.882589Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:60024
+[2m2025-07-29T04:07:35.882949Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:60040
+[2m2025-07-29T04:07:35.883068Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:60040
+[2m2025-07-29T04:07:35.883211Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:60040
+[2m2025-07-29T04:07:35.883258Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:60040
+[2m2025-07-29T04:07:35.883286Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:60040
+[2m2025-07-29T04:07:35.883621Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:60026
+[2m2025-07-29T04:07:35.883720Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:60026
+[2m2025-07-29T04:07:35.883855Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:60026
+[2m2025-07-29T04:07:35.883912Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:60026
+[2m2025-07-29T04:07:35.883949Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:60026
+[2m2025-07-29T04:07:35.884252Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:60080
+[2m2025-07-29T04:07:35.884345Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:60080
+[2m2025-07-29T04:07:35.884478Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:60080
+[2m2025-07-29T04:07:35.884534Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:60080
+[2m2025-07-29T04:07:35.884574Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:60080
+[2m2025-07-29T04:07:35.884974Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:60084
+[2m2025-07-29T04:07:35.885077Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:60084
+[2m2025-07-29T04:07:35.885212Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:60084
+[2m2025-07-29T04:07:35.885249Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:60084
+[2m2025-07-29T04:07:35.885302Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:60084
+[2m2025-07-29T04:07:35.885650Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:60064
+[2m2025-07-29T04:07:35.885754Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:60064
+[2m2025-07-29T04:07:35.885894Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:60064
+[2m2025-07-29T04:07:35.885946Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:60064
+[2m2025-07-29T04:07:35.885987Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:60064
+[2m2025-07-29T04:07:35.886269Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:60088
+[2m2025-07-29T04:07:35.886373Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:60088
+[2m2025-07-29T04:07:35.886509Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:60088
+[2m2025-07-29T04:07:35.886545Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:60088
+[2m2025-07-29T04:07:35.886589Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:60088
+[2m2025-07-29T04:07:35.886841Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:60110
+[2m2025-07-29T04:07:35.886955Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:60110
+[2m2025-07-29T04:07:35.887118Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:60110
+[2m2025-07-29T04:07:35.887174Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:60110
+[2m2025-07-29T04:07:35.887213Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:60110
+[2m2025-07-29T04:07:35.887446Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:60100
+[2m2025-07-29T04:07:35.887548Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:60100
+[2m2025-07-29T04:07:35.887685Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:60100
+[2m2025-07-29T04:07:35.887742Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:60100
+[2m2025-07-29T04:07:35.887761Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:60100
+[2m2025-07-29T04:07:35.888078Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:60134
+[2m2025-07-29T04:07:35.888184Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:60134
+[2m2025-07-29T04:07:35.888329Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:60134
+[2m2025-07-29T04:07:35.888387Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:60134
+[2m2025-07-29T04:07:35.888429Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:60134
+[2m2025-07-29T04:07:35.888723Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:60122
+[2m2025-07-29T04:07:35.888824Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:60122
+[2m2025-07-29T04:07:35.888963Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:60122
+[2m2025-07-29T04:07:35.889019Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:60122
+[2m2025-07-29T04:07:35.889040Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:60122
+[2m2025-07-29T04:07:35.889358Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:60142
+[2m2025-07-29T04:07:35.889459Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:60142
+[2m2025-07-29T04:07:35.889605Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:60142
+[2m2025-07-29T04:07:35.889662Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:60142
+[2m2025-07-29T04:07:35.889688Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:60142
+[2m2025-07-29T04:07:35.889995Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:60150
+[2m2025-07-29T04:07:35.890097Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:60150
+[2m2025-07-29T04:07:35.890236Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:60150
+[2m2025-07-29T04:07:35.890297Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:60150
+[2m2025-07-29T04:07:35.890368Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:60150
+[2m2025-07-29T04:07:35.890611Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:60158
+[2m2025-07-29T04:07:35.890727Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:60158
+[2m2025-07-29T04:07:35.890874Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:60158
+[2m2025-07-29T04:07:35.890924Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:60158
+[2m2025-07-29T04:07:35.890956Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:60158
+[2m2025-07-29T04:07:35.891282Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:60160
+[2m2025-07-29T04:07:35.891399Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:60160
+[2m2025-07-29T04:07:35.891543Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:60160
+[2m2025-07-29T04:07:35.891593Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:60160
+[2m2025-07-29T04:07:35.891624Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:60160
+[2m2025-07-29T04:07:35.891930Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:60174
+[2m2025-07-29T04:07:35.892039Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:60174
+[2m2025-07-29T04:07:35.892188Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:60174
+[2m2025-07-29T04:07:35.892248Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:60174
+[2m2025-07-29T04:07:35.892298Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:60174
+[2m2025-07-29T04:07:35.892585Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:60182
+[2m2025-07-29T04:07:35.892685Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:60182
+[2m2025-07-29T04:07:35.892828Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:60182
+[2m2025-07-29T04:07:35.892886Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:60182
+[2m2025-07-29T04:07:35.892909Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:60182
+[2m2025-07-29T04:07:35.893273Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:60196
+[2m2025-07-29T04:07:35.893379Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:60196
+[2m2025-07-29T04:07:35.893523Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:60196
+[2m2025-07-29T04:07:35.893587Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:60196
+[2m2025-07-29T04:07:35.893635Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:60196
+[2m2025-07-29T04:07:35.893935Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:60208
+[2m2025-07-29T04:07:35.894042Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:60208
+[2m2025-07-29T04:07:35.894184Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:60208
+[2m2025-07-29T04:07:35.894242Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:60208
+[2m2025-07-29T04:07:35.894289Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:60208
+[2m2025-07-29T04:07:35.894540Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:60214
+[2m2025-07-29T04:07:35.894646Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:60214
+[2m2025-07-29T04:07:35.894793Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:60214
+[2m2025-07-29T04:07:35.894844Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:60214
+[2m2025-07-29T04:07:35.894890Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:60214
+[2m2025-07-29T04:07:35.895170Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:60226
+[2m2025-07-29T04:07:35.895278Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:60226
+[2m2025-07-29T04:07:35.895423Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:60226
+[2m2025-07-29T04:07:35.895469Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:60226
+[2m2025-07-29T04:07:35.895493Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:60226
+[2m2025-07-29T04:07:35.895833Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:60228
+[2m2025-07-29T04:07:35.895934Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:60228
+[2m2025-07-29T04:07:35.896074Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:60228
+[2m2025-07-29T04:07:35.896137Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:60228
+[2m2025-07-29T04:07:35.896174Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:60228
+[2m2025-07-29T04:07:35.896472Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:60238
+[2m2025-07-29T04:07:35.896585Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:60238
+[2m2025-07-29T04:07:35.896731Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:60238
+[2m2025-07-29T04:07:35.896793Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:60238
+[2m2025-07-29T04:07:35.896854Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:60238
+[2m2025-07-29T04:07:35.897108Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:60250
+[2m2025-07-29T04:07:35.897216Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:60250
+[2m2025-07-29T04:07:35.897362Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:60250
+[2m2025-07-29T04:07:35.897421Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:60250
+[2m2025-07-29T04:07:35.897463Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:60250
+[2m2025-07-29T04:07:35.897763Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:60248
+[2m2025-07-29T04:07:35.897867Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:60248
+[2m2025-07-29T04:07:35.898023Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:60248
+[2m2025-07-29T04:07:35.898081Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:60248
+[2m2025-07-29T04:07:35.898119Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:60248
+[2m2025-07-29T04:07:35.898434Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:60276
+[2m2025-07-29T04:07:35.898540Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:60276
+[2m2025-07-29T04:07:35.898688Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:60276
+[2m2025-07-29T04:07:35.898747Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:60276
+[2m2025-07-29T04:07:35.898802Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:60276
+[2m2025-07-29T04:07:35.899012Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:60280
+[2m2025-07-29T04:07:35.899096Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:60280
+[2m2025-07-29T04:07:35.899223Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:60280
+[2m2025-07-29T04:07:35.899285Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:60280
+[2m2025-07-29T04:07:35.899331Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:60280
+[2m2025-07-29T04:07:35.899641Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:60286
+[2m2025-07-29T04:07:35.899710Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:60286
+[2m2025-07-29T04:07:35.899824Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:60286
+[2m2025-07-29T04:07:35.899864Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:60286
+[2m2025-07-29T04:07:35.899908Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:60286
+[2m2025-07-29T04:07:35.900240Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:60296
+[2m2025-07-29T04:07:35.900342Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:60296
+[2m2025-07-29T04:07:35.900488Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:60296
+[2m2025-07-29T04:07:35.900513Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:60296
+[2m2025-07-29T04:07:35.900539Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:60296
+[2m2025-07-29T04:07:35.900980Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:60302
+[2m2025-07-29T04:07:35.901085Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:60302
+[2m2025-07-29T04:07:35.901229Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:60302
+[2m2025-07-29T04:07:35.901288Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:60302
+[2m2025-07-29T04:07:35.901351Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:60302
+[2m2025-07-29T04:07:35.901674Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:60316
+[2m2025-07-29T04:07:35.901782Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:60316
+[2m2025-07-29T04:07:35.901924Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:60316
+[2m2025-07-29T04:07:35.901982Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:60316
+[2m2025-07-29T04:07:35.902020Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:60316
+[2m2025-07-29T04:07:35.902329Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:60328
+[2m2025-07-29T04:07:35.902440Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:60328
+[2m2025-07-29T04:07:35.902588Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:60328
+[2m2025-07-29T04:07:35.902638Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:60328
+[2m2025-07-29T04:07:35.902670Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:60328
+[2m2025-07-29T04:07:35.902981Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:60340
+[2m2025-07-29T04:07:35.903083Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:60340
+[2m2025-07-29T04:07:35.903220Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:60340
+[2m2025-07-29T04:07:35.903267Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:60340
+[2m2025-07-29T04:07:35.903313Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:60340
+[2m2025-07-29T04:07:35.903626Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:60344
+[2m2025-07-29T04:07:35.903685Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:60344
+[2m2025-07-29T04:07:35.903838Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:60344
+[2m2025-07-29T04:07:35.903885Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:60344
+[2m2025-07-29T04:07:35.903937Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:60344
+[2m2025-07-29T04:07:35.904258Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:60350
+[2m2025-07-29T04:07:35.904359Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:60350
+[2m2025-07-29T04:07:35.904505Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:60350
+[2m2025-07-29T04:07:35.904563Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:60350
+[2m2025-07-29T04:07:35.904617Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:60350
+[2m2025-07-29T04:07:35.904853Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:60360
+[2m2025-07-29T04:07:35.904959Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:60360
+[2m2025-07-29T04:07:35.905103Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:60360
+[2m2025-07-29T04:07:35.905152Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:60360
+[2m2025-07-29T04:07:35.905198Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:60360
+[2m2025-07-29T04:07:35.905462Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:60362
+[2m2025-07-29T04:07:35.905564Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:60362
+[2m2025-07-29T04:07:35.905695Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:60362
+[2m2025-07-29T04:07:35.905754Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:60362
+[2m2025-07-29T04:07:35.905778Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:60362
+[2m2025-07-29T04:07:35.906073Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:60372
+[2m2025-07-29T04:07:35.906173Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:60372
+[2m2025-07-29T04:07:35.906305Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:60372
+[2m2025-07-29T04:07:35.906354Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:60372
+[2m2025-07-29T04:07:35.906399Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:60372
+[2m2025-07-29T04:07:35.906716Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m TCP connection accepted from: 127.0.0.1:60386
+[2m2025-07-29T04:07:35.906826Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Starting WebSocket setup for: 127.0.0.1:60386
+[2m2025-07-29T04:07:35.906996Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket handshake completed for: 127.0.0.1:60386
+[2m2025-07-29T04:07:35.907126Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: New WebSocket connection: 127.0.0.1:60386
+[2m2025-07-29T04:07:35.907183Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket tasks spawned for: 127.0.0.1:60386
+[2m2025-07-29T04:07:35.929305Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:35.978725Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:36.028267Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:36.079872Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:36.129333Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:36.177541Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:36.228028Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:36.279437Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:36.329316Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:36.378737Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:36.428483Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:36.477458Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:36.526971Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:36.577721Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:36.627981Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:36.678350Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:36.728312Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:36.779361Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:36.829514Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:36.879729Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:36.929430Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:36.978302Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:37.029190Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:37.078194Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:37.128208Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:37.179413Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:37.230078Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:37.277880Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:37.329905Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:37.377182Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:37.429608Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:37.477963Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:37.528422Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:37.577862Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:37.629568Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:37.680010Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:37.729324Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:37.780181Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:37.828353Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:37.877387Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:37.928251Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:37.979394Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy Stats - Connections: 100, Total Messages: 8409, Messages/sec: 1681.07, Dropped: 0, Slow Clients: 0, Pending: 0, Max Pending: 2
+[2m2025-07-29T04:07:37.979512Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:38.029829Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:38.077021Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:38.128102Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:38.178109Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:38.228112Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:38.278238Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:38.328604Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:38.379913Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:38.428109Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:38.480137Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:38.527019Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:38.577035Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:38.629680Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:38.679217Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:38.729441Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:38.778229Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:38.829829Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:38.880016Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:38.927866Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:38.977453Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:39.026981Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:39.077834Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:39.127101Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:39.178237Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:39.228202Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:39.278107Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:39.328314Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:39.377415Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:39.429817Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:39.477513Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:39.528326Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:39.579360Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:39.630003Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:39.677100Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:39.728386Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:39.779373Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:39.827875Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:39.878338Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:39.928212Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:39.977589Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:40.028176Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:40.078008Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:40.129784Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:40.180053Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:40.228643Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:40.277854Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:40.328214Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:40.377764Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:40.427690Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:40.479263Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:40.527157Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:40.579464Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:40.503008Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:40.552739Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:37.998881Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:38.049256Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:38.099227Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:38.150424Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:38.200784Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:38.250432Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:38.299201Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:38.348533Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:38.400056Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:38.448468Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:38.501014Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:38.549560Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:38.599502Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:38.649328Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:38.699146Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:38.749051Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:38.798404Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:38.848851Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:38.899082Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:38.948478Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:39.000451Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:39.050147Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:39.099241Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:39.148708Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:39.199673Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:39.249526Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:39.298953Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:39.348833Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:39.399210Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:39.448792Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:39.500561Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:39.548354Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:39.599220Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:39.648763Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:39.699057Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:39.749489Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:39.799316Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:39.849015Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:39.899213Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:39.950219Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:39.999257Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:40.049610Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:40.099094Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:40.147901Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:40.199068Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:40.248806Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy Stats - Connections: 100, Total Messages: 28407, Messages/sec: 4000.76, Dropped: 0, Slow Clients: 0, Pending: 0, Max Pending: 2
+[2m2025-07-29T04:07:40.248966Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:40.300538Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:40.350485Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:40.399281Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:40.449313Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:40.499001Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:40.549400Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:40.598520Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:40.649432Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:40.698995Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:40.748976Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:40.800211Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:40.849694Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:40.898255Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:40.950977Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:40.999072Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:41.049225Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:41.098356Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:41.149036Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:41.200376Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:41.250938Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:41.300333Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:41.350089Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:41.399056Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:41.448515Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:41.499077Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:41.550545Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:41.600146Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:41.650719Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:41.700757Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:41.749467Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:41.797910Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:41.849292Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:41.898856Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:41.948354Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:41.999919Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:42.048681Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:42.099037Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:42.150135Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:42.198383Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:42.248997Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:42.298640Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:42.349098Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:42.401166Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:42.448652Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:42.499430Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:42.548855Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:42.599127Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:42.649242Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:42.698583Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:42.749322Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:42.798783Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:42.850235Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:42.900834Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:42.950087Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:42.998784Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:43.048848Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:43.099395Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:43.149162Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:43.198729Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:43.248710Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:43.297958Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:43.349746Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:43.399763Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:43.452022Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:43.498829Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:43.548348Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:43.599867Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 100/100 connections (0 failed)
+[2m2025-07-29T04:07:43.631032Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59532: Ok(())
+[2m2025-07-29T04:07:43.631135Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59532
+[2m2025-07-29T04:07:43.631057Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59508: Ok(())
+[2m2025-07-29T04:07:43.631173Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.631202Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59508
+[2m2025-07-29T04:07:43.631242Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59422: Ok(())
+[2m2025-07-29T04:07:43.631259Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59734: Ok(())
+[2m2025-07-29T04:07:43.631211Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59630: Ok(())
+[2m2025-07-29T04:07:43.631274Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59422
+[2m2025-07-29T04:07:43.631283Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59418: Ok(())
+[2m2025-07-29T04:07:43.631298Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.631311Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.631290Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59734
+[2m2025-07-29T04:07:43.631342Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59496: Ok(())
+[2m2025-07-29T04:07:43.631363Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59788: Ok(())
+[2m2025-07-29T04:07:43.631370Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59630
+[2m2025-07-29T04:07:43.631377Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.631392Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.631396Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.631415Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59426: Ok(())
+[2m2025-07-29T04:07:43.631439Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59736: Ok(())
+[2m2025-07-29T04:07:43.631446Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.631452Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.631493Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59692: Ok(())
+[2m2025-07-29T04:07:43.631277Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.631500Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59416: Ok(())
+[2m2025-07-29T04:07:43.631453Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59854: Ok(())
+[2m2025-07-29T04:07:43.631576Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.631592Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.631511Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59516: Ok(())
+[2m2025-07-29T04:07:43.631447Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59482: Ok(())
+[2m2025-07-29T04:07:43.631626Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.631642Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.631660Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59642: Ok(())
+[2m2025-07-29T04:07:43.631664Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.631691Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59764: Ok(())
+[2m2025-07-29T04:07:43.631377Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.631724Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59612: Ok(())
+[2m2025-07-29T04:07:43.631695Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59518: Ok(())
+[2m2025-07-29T04:07:43.631664Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59768: Ok(())
+[2m2025-07-29T04:07:43.631760Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.631769Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.631782Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59678: Ok(())
+[2m2025-07-29T04:07:43.631792Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.631801Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.631828Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59582: Ok(())
+[2m2025-07-29T04:07:43.631622Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59718: Ok(())
+[2m2025-07-29T04:07:43.631840Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.631697Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59828: Ok(())
+[2m2025-07-29T04:07:43.631727Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59826: Ok(())
+[2m2025-07-29T04:07:43.631881Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59420: Ok(())
+[2m2025-07-29T04:07:43.631890Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.631895Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59594: Ok(())
+[2m2025-07-29T04:07:43.631900Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.631909Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.631912Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59610: Ok(())
+[2m2025-07-29T04:07:43.631925Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.631942Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.631951Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59660: Ok(())
+[2m2025-07-29T04:07:43.631743Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.631978Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59814: Ok(())
+[2m2025-07-29T04:07:43.631708Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59808: Ok(())
+[2m2025-07-29T04:07:43.631836Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59702: Ok(())
+[2m2025-07-29T04:07:43.631963Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.631980Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59418
+[2m2025-07-29T04:07:43.631980Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59790: Ok(())
+[2m2025-07-29T04:07:43.631861Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.632036Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.632038Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59424: Ok(())
+[2m2025-07-29T04:07:43.632101Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.632563Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59466: Ok(())
+[2m2025-07-29T04:07:43.632281Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59496
+[2m2025-07-29T04:07:43.632646Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59654: Ok(())
+[2m2025-07-29T04:07:43.632677Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59788
+[2m2025-07-29T04:07:43.632690Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59426
+[2m2025-07-29T04:07:43.632699Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59736
+[2m2025-07-29T04:07:43.632705Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59692
+[2m2025-07-29T04:07:43.632708Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.632442Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.632795Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59646: Ok(())
+[2m2025-07-29T04:07:43.632540Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.632816Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.632846Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.632661Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59716: Ok(())
+[2m2025-07-29T04:07:43.632945Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.632307Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59682: Ok(())
+[2m2025-07-29T04:07:43.632978Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59548: Ok(())
+[2m2025-07-29T04:07:43.633041Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59502: Ok(())
+[2m2025-07-29T04:07:43.632856Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59662: Ok(())
+[2m2025-07-29T04:07:43.632873Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59568: Ok(())
+[2m2025-07-29T04:07:43.633157Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.632186Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.632358Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.633247Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59872: Ok(())
+[2m2025-07-29T04:07:43.633265Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.633009Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.632734Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59416
+[2m2025-07-29T04:07:43.633308Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59874: Ok(())
+[2m2025-07-29T04:07:43.633310Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59854
+[2m2025-07-29T04:07:43.633320Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.633319Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59910: Ok(())
+[2m2025-07-29T04:07:43.633342Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.633355Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59916: Ok(())
+[2m2025-07-29T04:07:43.633365Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.633378Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59870: Ok(())
+[2m2025-07-29T04:07:43.633388Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.633261Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59556: Ok(())
+[2m2025-07-29T04:07:43.633428Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59894: Ok(())
+[2m2025-07-29T04:07:43.633361Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59766: Ok(())
+[2m2025-07-29T04:07:43.633464Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.633180Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.633494Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.633058Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.633438Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.633323Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59516
+[2m2025-07-29T04:07:43.633636Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59482
+[2m2025-07-29T04:07:43.633652Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59642
+[2m2025-07-29T04:07:43.633659Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59764
+[2m2025-07-29T04:07:43.633672Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59612
+[2m2025-07-29T04:07:43.633679Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59768
+[2m2025-07-29T04:07:43.633685Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59518
+[2m2025-07-29T04:07:43.633697Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59678
+[2m2025-07-29T04:07:43.633704Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59582
+[2m2025-07-29T04:07:43.633729Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59718
+[2m2025-07-29T04:07:43.633745Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59828
+[2m2025-07-29T04:07:43.633752Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59826
+[2m2025-07-29T04:07:43.633763Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59420
+[2m2025-07-29T04:07:43.633771Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59594
+[2m2025-07-29T04:07:43.633777Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59610
+[2m2025-07-29T04:07:43.633785Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59660
+[2m2025-07-29T04:07:43.633792Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59814
+[2m2025-07-29T04:07:43.633799Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59808
+[2m2025-07-29T04:07:43.633805Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59702
+[2m2025-07-29T04:07:43.633813Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59790
+[2m2025-07-29T04:07:43.633819Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59424
+[2m2025-07-29T04:07:43.633825Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59466
+[2m2025-07-29T04:07:43.633832Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59654
+[2m2025-07-29T04:07:43.633838Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59646
+[2m2025-07-29T04:07:43.633844Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59716
+[2m2025-07-29T04:07:43.633851Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59682
+[2m2025-07-29T04:07:43.633857Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59548
+[2m2025-07-29T04:07:43.633863Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59502
+[2m2025-07-29T04:07:43.633869Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59662
+[2m2025-07-29T04:07:43.633876Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59568
+[2m2025-07-29T04:07:43.633882Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59872
+[2m2025-07-29T04:07:43.633888Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59874
+[2m2025-07-29T04:07:43.633894Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59910
+[2m2025-07-29T04:07:43.633900Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59916
+[2m2025-07-29T04:07:43.633907Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59870
+[2m2025-07-29T04:07:43.633913Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59556
+[2m2025-07-29T04:07:43.633925Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59894
+[2m2025-07-29T04:07:43.633931Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59766
+[2m2025-07-29T04:07:43.633105Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.648673Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Broadcast sent to 49/49 connections (0 failed)
+[2m2025-07-29T04:07:43.650459Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59932: Ok(())
+[2m2025-07-29T04:07:43.650500Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59938: Ok(())
+[2m2025-07-29T04:07:43.650514Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59932
+[2m2025-07-29T04:07:43.650528Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59918: Ok(())
+[2m2025-07-29T04:07:43.650535Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59938
+[2m2025-07-29T04:07:43.650536Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59930: Ok(())
+[2m2025-07-29T04:07:43.650548Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59918
+[2m2025-07-29T04:07:43.650557Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.650537Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.650562Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59930
+[2m2025-07-29T04:07:43.650541Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.650698Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.652109Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59934: Ok(())
+[2m2025-07-29T04:07:43.652138Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59940: Ok(())
+[2m2025-07-29T04:07:43.652184Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59934
+[2m2025-07-29T04:07:43.652200Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.652229Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59940
+[2m2025-07-29T04:07:43.652249Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.652466Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59936: Ok(())
+[2m2025-07-29T04:07:43.652514Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59936
+[2m2025-07-29T04:07:43.652534Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.653978Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59992: Ok(())
+[2m2025-07-29T04:07:43.654022Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:59994: Ok(())
+[2m2025-07-29T04:07:43.654042Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.654038Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59992
+[2m2025-07-29T04:07:43.654149Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:59994
+[2m2025-07-29T04:07:43.654169Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.654480Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:60022: Ok(())
+[2m2025-07-29T04:07:43.654540Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:60022
+[2m2025-07-29T04:07:43.654580Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.655952Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:60040: Ok(())
+[2m2025-07-29T04:07:43.655991Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:60024: Ok(())
+[2m2025-07-29T04:07:43.656015Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:60040
+[2m2025-07-29T04:07:43.656023Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.656061Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:60024
+[2m2025-07-29T04:07:43.656087Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.657501Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:60026: Ok(())
+[2m2025-07-29T04:07:43.657560Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:60026
+[2m2025-07-29T04:07:43.657600Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.659025Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:60064: Ok(())
+[2m2025-07-29T04:07:43.659086Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:60080: Ok(())
+[2m2025-07-29T04:07:43.659103Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:60064
+[2m2025-07-29T04:07:43.659166Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:60080
+[2m2025-07-29T04:07:43.659215Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.659117Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.659116Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:60084: Ok(())
+[2m2025-07-29T04:07:43.659341Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:60084
+[2m2025-07-29T04:07:43.659359Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.659519Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:60110: Ok(())
+[2m2025-07-29T04:07:43.659553Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:60088: Ok(())
+[2m2025-07-29T04:07:43.659609Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:60110
+[2m2025-07-29T04:07:43.659667Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.659741Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:60088
+[2m2025-07-29T04:07:43.659774Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.661243Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:60100: Ok(())
+[2m2025-07-29T04:07:43.661305Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:60100
+[2m2025-07-29T04:07:43.661325Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.662694Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:60142: Ok(())
+[2m2025-07-29T04:07:43.662735Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:60122: Ok(())
+[2m2025-07-29T04:07:43.662774Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:60142
+[2m2025-07-29T04:07:43.662797Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.662823Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:60134: Ok(())
+[2m2025-07-29T04:07:43.662766Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:60150: Ok(())
+[2m2025-07-29T04:07:43.662800Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:60122
+[2m2025-07-29T04:07:43.662847Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.662973Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:60134
+[2m2025-07-29T04:07:43.662988Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.662888Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.662994Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:60150
+[2m2025-07-29T04:07:43.664482Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:60160: Ok(())
+[2m2025-07-29T04:07:43.664537Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:60174: Ok(())
+[2m2025-07-29T04:07:43.664582Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:60158: Ok(())
+[2m2025-07-29T04:07:43.664544Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:60160
+[2m2025-07-29T04:07:43.664595Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.664774Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.664742Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:60174
+[2m2025-07-29T04:07:43.664662Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.664925Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:60158
+[2m2025-07-29T04:07:43.667450Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:60182: Ok(())
+[2m2025-07-29T04:07:43.667518Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:60182
+[2m2025-07-29T04:07:43.667527Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:60208: Ok(())
+[2m2025-07-29T04:07:43.667538Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.667563Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:60208
+[2m2025-07-29T04:07:43.667561Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:60214: Ok(())
+[2m2025-07-29T04:07:43.667582Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.667603Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:60196: Ok(())
+[2m2025-07-29T04:07:43.667689Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.667643Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:60214
+[2m2025-07-29T04:07:43.667814Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:60196
+[2m2025-07-29T04:07:43.667846Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.669264Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:60226: Ok(())
+[2m2025-07-29T04:07:43.669322Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:60228: Ok(())
+[2m2025-07-29T04:07:43.669326Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:60226
+[2m2025-07-29T04:07:43.669388Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.669486Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:60228
+[2m2025-07-29T04:07:43.669518Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.670903Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:60248: Ok(())
+[2m2025-07-29T04:07:43.670942Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:60250: Ok(())
+[2m2025-07-29T04:07:43.670967Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:60248
+[2m2025-07-29T04:07:43.670975Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.670981Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:60238: Ok(())
+[2m2025-07-29T04:07:43.671015Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:60250
+[2m2025-07-29T04:07:43.671032Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:60238
+[2m2025-07-29T04:07:43.671032Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.671044Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.672484Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:60286: Ok(())
+[2m2025-07-29T04:07:43.672530Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:60276: Ok(())
+[2m2025-07-29T04:07:43.672545Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:60286
+[2m2025-07-29T04:07:43.672563Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:60280: Ok(())
+[2m2025-07-29T04:07:43.672594Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:60276
+[2m2025-07-29T04:07:43.672611Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.672551Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.672616Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:60280
+[2m2025-07-29T04:07:43.672668Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.675110Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:60316: Ok(())
+[2m2025-07-29T04:07:43.675140Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:60302: Ok(())
+[2m2025-07-29T04:07:43.675168Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:60316
+[2m2025-07-29T04:07:43.675188Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.675192Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:60296: Ok(())
+[2m2025-07-29T04:07:43.675194Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:60302
+[2m2025-07-29T04:07:43.675243Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.675324Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:60296
+[2m2025-07-29T04:07:43.675348Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.675378Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:60328: Ok(())
+[2m2025-07-29T04:07:43.675396Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:60328
+[2m2025-07-29T04:07:43.675408Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.676870Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:60344: Ok(())
+[2m2025-07-29T04:07:43.676904Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:60340: Ok(())
+[2m2025-07-29T04:07:43.676946Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:60344
+[2m2025-07-29T04:07:43.676967Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.676974Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:60340
+[2m2025-07-29T04:07:43.676989Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.679446Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:60386: Ok(())
+[2m2025-07-29T04:07:43.679472Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:60350: Ok(())
+[2m2025-07-29T04:07:43.679539Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:60386
+[2m2025-07-29T04:07:43.679521Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:60372: Ok(())
+[2m2025-07-29T04:07:43.679572Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:60350
+[2m2025-07-29T04:07:43.679554Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:60362: Ok(())
+[2m2025-07-29T04:07:43.679597Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.679597Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:60372
+[2m2025-07-29T04:07:43.679596Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.679617Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.679624Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:60362
+[2m2025-07-29T04:07:43.679563Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:43.679599Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Receive task completed for 127.0.0.1:60360: Ok(())
+[2m2025-07-29T04:07:43.679722Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy: WebSocket connection closed: 127.0.0.1:60360
+[2m2025-07-29T04:07:43.679747Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m WebSocket sender task terminated
+[2m2025-07-29T04:07:45.249008Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy Stats - Connections: 0, Total Messages: 41103, Messages/sec: 2539.09, Dropped: 0, Slow Clients: 0, Pending: 0, Max Pending: 2
+[2m2025-07-29T04:07:50.248454Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy Stats - Connections: 0, Total Messages: 41103, Messages/sec: 0.00, Dropped: 0, Slow Clients: 0, Pending: 0, Max Pending: 2
+[2m2025-07-29T04:07:55.247698Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy Stats - Connections: 0, Total Messages: 41103, Messages/sec: 0.00, Dropped: 0, Slow Clients: 0, Pending: 0, Max Pending: 2
+[2m2025-07-29T04:08:00.249243Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy Stats - Connections: 0, Total Messages: 41103, Messages/sec: 0.00, Dropped: 0, Slow Clients: 0, Pending: 0, Max Pending: 2
+[2m2025-07-29T04:08:05.248472Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy Stats - Connections: 0, Total Messages: 41103, Messages/sec: 0.00, Dropped: 0, Slow Clients: 0, Pending: 0, Max Pending: 2
+[2m2025-07-29T04:08:07.521062Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy Stats - Connections: 0, Total Messages: 41103, Messages/sec: 0.00, Dropped: 0, Slow Clients: 0, Pending: 0, Max Pending: 2
+[2m2025-07-29T04:08:12.522503Z[0m [32m INFO[0m [2mbevy_server::ecs::systems[0m[2m:[0m Bevy Stats - Connections: 0, Total Messages: 41103, Messages/sec: 0.00, Dropped: 0, Slow Clients: 0, Pending: 0, Max Pending: 2
