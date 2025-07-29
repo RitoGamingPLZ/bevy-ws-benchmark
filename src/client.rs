@@ -6,6 +6,7 @@ use futures_util::{SinkExt, StreamExt};
 use serde::{Deserialize, Serialize};
 use clap::{Parser, Subcommand};
 use tracing::{info, warn, error};
+use std::sync::atomic::{AtomicU64, Ordering};
 
 #[derive(Parser)]
 #[command(author, version, about)]
@@ -81,6 +82,117 @@ struct BenchmarkStats {
     max_latency_ms: u64,
     start_time: Option<Instant>,
     end_time: Option<Instant>,
+}
+
+// Sharded stats to reduce lock contention
+#[derive(Debug)]
+struct ShardedBenchmarkStats {
+    // Atomic counters for high-frequency operations
+    messages_sent: AtomicU64,
+    messages_received: AtomicU64,
+    total_latency_ms: AtomicU64,
+    
+    // Sharded mutexes for less frequent updates (4 shards should be enough)
+    shards: [Mutex<BenchmarkStatsShard>; 4],
+    
+    // Global state (protected by mutex)
+    global: Mutex<BenchmarkStatsGlobal>,
+}
+
+#[derive(Debug, Default)]
+struct BenchmarkStatsShard {
+    min_latency_ms: u64,
+    max_latency_ms: u64,
+}
+
+#[derive(Debug, Default)]
+struct BenchmarkStatsGlobal {
+    start_time: Option<Instant>,
+    end_time: Option<Instant>,
+}
+
+impl ShardedBenchmarkStats {
+    fn new() -> Self {
+        Self {
+            messages_sent: AtomicU64::new(0),
+            messages_received: AtomicU64::new(0),
+            total_latency_ms: AtomicU64::new(0),
+            shards: [
+                Mutex::new(BenchmarkStatsShard::default()),
+                Mutex::new(BenchmarkStatsShard::default()),
+                Mutex::new(BenchmarkStatsShard::default()),
+                Mutex::new(BenchmarkStatsShard::default()),
+            ],
+            global: Mutex::new(BenchmarkStatsGlobal::default()),
+        }
+    }
+    
+    fn increment_sent(&self) {
+        self.messages_sent.fetch_add(1, Ordering::Relaxed);
+    }
+    
+    fn increment_received(&self) {
+        self.messages_received.fetch_add(1, Ordering::Relaxed);
+    }
+    
+    async fn add_latency(&self, latency_ms: u64, shard_id: usize) {
+        self.total_latency_ms.fetch_add(latency_ms, Ordering::Relaxed);
+        
+        // Use sharded mutex for min/max updates (less frequent)
+        let shard_idx = shard_id % 4;
+        let mut shard = self.shards[shard_idx].lock().await;
+        if shard.min_latency_ms == 0 || latency_ms < shard.min_latency_ms {
+            shard.min_latency_ms = latency_ms;
+        }
+        if latency_ms > shard.max_latency_ms {
+            shard.max_latency_ms = latency_ms;
+        }
+    }
+    
+    async fn set_start_time(&self, time: Instant) {
+        let mut global = self.global.lock().await;
+        global.start_time = Some(time);
+    }
+    
+    async fn set_end_time(&self, time: Instant) {
+        let mut global = self.global.lock().await;
+        global.end_time = Some(time);
+    }
+    
+    async fn to_benchmark_stats(&self) -> BenchmarkStats {
+        let messages_sent = self.messages_sent.load(Ordering::Relaxed);
+        let messages_received = self.messages_received.load(Ordering::Relaxed);
+        let total_latency_ms = self.total_latency_ms.load(Ordering::Relaxed);
+        
+        // Aggregate min/max from all shards
+        let mut min_latency_ms = u64::MAX;
+        let mut max_latency_ms = 0u64;
+        
+        for shard_mutex in &self.shards {
+            let shard = shard_mutex.lock().await;
+            if shard.min_latency_ms > 0 && shard.min_latency_ms < min_latency_ms {
+                min_latency_ms = shard.min_latency_ms;
+            }
+            if shard.max_latency_ms > max_latency_ms {
+                max_latency_ms = shard.max_latency_ms;
+            }
+        }
+        
+        if min_latency_ms == u64::MAX {
+            min_latency_ms = 0;
+        }
+        
+        let global = self.global.lock().await;
+        BenchmarkStats {
+            messages_sent,
+            messages_received,
+            total_latency_ms,
+            min_latency_ms,
+            max_latency_ms,
+            start_time: global.start_time,
+            end_time: global.end_time,
+        }
+    }
 }
 
 impl BenchmarkStats {
@@ -363,11 +475,11 @@ async fn run_frequency_benchmark(
     info!("  Connections: {}", num_connections);
     
     let payload = "x".repeat(payload_size);
-    let stats = Arc::new(Mutex::new(BenchmarkStats::default()));
+    let stats = Arc::new(ShardedBenchmarkStats::new());
     let mut handles = Vec::new();
     
     let start_time = Instant::now();
-    stats.lock().await.start_time = Some(start_time);
+    stats.set_start_time(start_time).await;
     
     let total_messages = frequency * duration_seconds;
     
@@ -406,11 +518,11 @@ async fn run_frequency_benchmark(
                 break;
             }
             
-            let stats_lock = stats_clone.lock().await;
+            let current_stats = stats_clone.to_benchmark_stats().await;
             let expected_echo = num_connections as u64 * frequency * elapsed;
             let expected_broadcasts = 20u64 * elapsed; // Server broadcasts at 20Hz
             let _expected_total = expected_echo + expected_broadcasts;
-            let actual = stats_lock.messages_received;
+            let actual = current_stats.messages_received;
             let loss_rate = if expected_echo > 0 {
                 if actual >= expected_echo {
                     0.0 // Received at least all expected echo messages
@@ -423,8 +535,8 @@ async fn run_frequency_benchmark(
             
             info!(
                 "Progress: {}s/{} - Sent: {}, Received: {}, Loss: {:.2}%, Avg Latency: {:.2}ms",
-                elapsed, duration_seconds, stats_lock.messages_sent, actual, 
-                loss_rate, stats_lock.average_latency_ms()
+                elapsed, duration_seconds, current_stats.messages_sent, actual, 
+                loss_rate, current_stats.average_latency_ms()
             );
         }
     });
@@ -436,17 +548,17 @@ async fn run_frequency_benchmark(
     monitor_handle.abort();
     
     let end_time = Instant::now();
-    let mut stats_lock = stats.lock().await;
-    stats_lock.end_time = Some(end_time);
+    stats.set_end_time(end_time).await;
     
+    let final_stats = stats.to_benchmark_stats().await;
     let duration = end_time.duration_since(start_time);
     let expected_echo = num_connections as u64 * total_messages;
     let expected_broadcasts = 20u64 * duration.as_secs(); // Server broadcasts at 20Hz
     let expected_total = expected_echo + expected_broadcasts;
-    let loss_rate = if stats_lock.messages_received >= expected_echo {
+    let loss_rate = if final_stats.messages_received >= expected_echo {
         0.0 // Received at least all expected echo messages
     } else {
-        (expected_echo - stats_lock.messages_received) as f64 / expected_echo as f64 * 100.0
+        (expected_echo - final_stats.messages_received) as f64 / expected_echo as f64 * 100.0
     };
     
     info!("\n=== {}Hz Frequency Benchmark Results ===", frequency);
@@ -454,13 +566,13 @@ async fn run_frequency_benchmark(
     info!("Expected echo messages: {}", expected_echo);
     info!("Expected broadcast messages: {}", expected_broadcasts);
     info!("Expected total messages: {}", expected_total);
-    info!("Messages sent: {}", stats_lock.messages_sent);
-    info!("Messages received: {}", stats_lock.messages_received);
+    info!("Messages sent: {}", final_stats.messages_sent);
+    info!("Messages received: {}", final_stats.messages_received);
     info!("Echo message loss: {:.2}%", loss_rate);
-    info!("Actual frequency: {:.2}Hz", stats_lock.throughput_mps());
-    info!("Average latency: {:.2}ms", stats_lock.average_latency_ms());
-    info!("Min latency: {}ms", stats_lock.min_latency_ms);
-    info!("Max latency: {}ms", stats_lock.max_latency_ms);
+    info!("Actual frequency: {:.2}Hz", final_stats.throughput_mps());
+    info!("Average latency: {:.2}ms", final_stats.average_latency_ms());
+    info!("Min latency: {}ms", final_stats.min_latency_ms);
+    info!("Max latency: {}ms", final_stats.max_latency_ms);
 }
 
 async fn run_frequency_connection(
@@ -469,7 +581,7 @@ async fn run_frequency_connection(
     frequency: u64,
     duration_seconds: u64,
     payload: String,
-    stats: Arc<Mutex<BenchmarkStats>>,
+    stats: Arc<ShardedBenchmarkStats>,
 ) -> Result<(), Box<dyn std::error::Error + Send + Sync>> {
     // Add connection timeout (keep original simple approach)
     let (ws_stream, _) = tokio::time::timeout(
@@ -488,9 +600,8 @@ async fn run_frequency_connection(
                         let now = SystemTime::now().duration_since(UNIX_EPOCH).unwrap().as_millis() as u64;
                         let latency = now.saturating_sub(benchmark_msg.timestamp);
                         
-                        let mut stats_lock = stats_clone.lock().await;
-                        stats_lock.messages_received += 1;
-                        stats_lock.add_latency(latency);
+                        stats_clone.increment_received();
+                        stats_clone.add_latency(latency, conn_id).await;
                     }
                 }
                 Ok(Message::Close(_)) => break,
@@ -523,8 +634,7 @@ async fn run_frequency_connection(
         
         match sender.send(Message::Text(message_text)).await {
             Ok(_) => {
-                let mut stats_lock = stats.lock().await;
-                stats_lock.messages_sent += 1;
+                stats.increment_sent();
                 message_id += 1;
             }
             Err(e) => {
