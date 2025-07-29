@@ -3,6 +3,20 @@ name = "rust-ws-benchmark"
 version = "0.1.0"
 edition = "2024"
 
+# Optimization profiles for faster compilation
+[profile.dev]
+opt-level = 0
+debug = true
+incremental = true
+
+[profile.release]
+opt-level = 2
+debug = false
+strip = true
+lto = false
+codegen-units = 16
+panic = "abort"
+
 [dependencies]
 tokio = { version = "1.0", features = ["full"] }
 tokio-tungstenite = "0.20"

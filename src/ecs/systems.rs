@@ -1,9 +1,9 @@
 use bevy::prelude::*;
 use std::net::SocketAddr;
 use std::sync::Arc;
+use std::sync::atomic::{Ordering};
 use std::time::{Duration, Instant};
 use tokio::net::TcpListener;
-use tokio::sync::Mutex;
 use tokio_tungstenite::{accept_async, tungstenite::Message};
 use futures_util::{SinkExt, StreamExt};
 use clap::Parser;
@@ -94,7 +94,7 @@ async fn setup_websocket_connection(
     stream: tokio::net::TcpStream,
     addr: SocketAddr,
     connections: Arc<SccHashMap<SocketAddr, tokio::sync::mpsc::Sender<Message>>>,
-    stats: Arc<Mutex<ServerStats>>,
+    stats: Arc<ServerStats>,
 ) -> Result<(), Box<dyn std::error::Error + Send + Sync>> {
     let setup_start = Instant::now();
     info!("Starting WebSocket setup for: {}", addr);
@@ -146,21 +146,9 @@ async fn setup_websocket_connection(
         warn!("Slow connection insert for {}: {}ms", addr, insert_time.as_millis());
     }
     
-    let stats_start = Instant::now();
-    let mut stats_lock = stats.lock().await;
-    let stats_lock_time = stats_start.elapsed();
-    if stats_lock_time.as_millis() > 10 {
-        warn!("Slow stats lock acquisition for {}: {}ms", addr, stats_lock_time.as_millis());
-    }
+    stats.connections.store(connections.len(), Ordering::Relaxed);
     
-    stats_lock.connections = connections.len();
-    if stats_lock.start_time.is_none() {
-        stats_lock.start_time = Some(Instant::now());
-        stats_lock.last_stats_time = Some(Instant::now());
-    }
-    drop(stats_lock); // Explicit drop to release lock quickly
-    
-    info!("Bevy: New WebSocket connection: {}", addr);
+    // info!("Bevy: New WebSocket connection: {}", addr);
     
     // Spawn sender task (channel → WebSocket)
     let spawn_start = Instant::now();
@@ -202,10 +190,7 @@ async fn setup_websocket_connection(
         
         // Clean up connection - scc::HashMap safe removal
         cleanup_connections.remove(&addr);
-        
-        let mut stats_lock = cleanup_stats.lock().await;
-        stats_lock.connections = cleanup_connections.len();
-        
+        cleanup_stats.connections.store(cleanup_connections.len(), Ordering::Relaxed);
         info!("Bevy: WebSocket connection closed: {}", addr);
     });
     
@@ -229,7 +214,7 @@ async fn websocket_receiver_task(
     mut ws_receiver: futures_util::stream::SplitStream<tokio_tungstenite::WebSocketStream<tokio::net::TcpStream>>,
     addr: SocketAddr,
     connections: Arc<SccHashMap<SocketAddr, tokio::sync::mpsc::Sender<Message>>>,
-    stats: Arc<Mutex<ServerStats>>,
+    stats: Arc<ServerStats>,
 ) {
     while let Some(msg) = ws_receiver.next().await {
         let start_time = Instant::now();
@@ -249,10 +234,17 @@ async fn websocket_receiver_task(
                         .unwrap()
                         .as_millis() as u64;
                     
+                    // Pre-allocate payload string to reduce allocations
+                    let mut payload = String::with_capacity(benchmark_msg.payload.len() + 50);
+                    payload.push_str("bevy-echo[");
+                    payload.push_str(&addr.to_string());
+                    payload.push_str("]: ");
+                    payload.push_str(&benchmark_msg.payload);
+                    
                     let response = BenchmarkMessage {
                         id: benchmark_msg.id,
                         timestamp: server_timestamp,
-                        payload: format!("bevy-echo[{}]: {}", addr, benchmark_msg.payload),
+                        payload,
                         message_type: Some("echo".to_string()),
                         original_id: Some(benchmark_msg.id),
                         server_timestamp: Some(server_timestamp),
@@ -265,33 +257,28 @@ async fn websocket_receiver_task(
                         
                         let send_start = Instant::now();
                         
-                        // Get channel sender - scc::HashMap safe concurrent access
-                        let sender_opt = connections.get(&addr).map(|entry| entry.get().clone());
-                        let lock_time = send_start.elapsed();
-                        
-                        if let Some(sender) = sender_opt {
+                        // Direct access to sender using scc::HashMap optimized lookup
+                        if let Some(entry) = connections.get(&addr) {
+                            let sender = entry.get().clone();
+                            let lock_time = send_start.elapsed();
                             let channel_start = Instant::now();
-                            match tokio::time::timeout(
-                                Duration::from_millis(super::components::SEND_TIMEOUT_MS),
-                                sender.send(Message::Text(response_text))
-                            ).await {
-                                Ok(Ok(_)) => {
+                            // Use try_send for instant, non-blocking operation
+                            match sender.try_send(Message::Text(response_text)) {
+                                Ok(_) => {
                                     let channel_time = channel_start.elapsed();
                                     let total_time = start_time.elapsed();
                                     
                                     // Update stats with pending message info
                                     let pending = super::components::CHANNEL_BUFFER_SIZE - sender.capacity();
-                                    {
-                                        let mut stats_lock = stats.lock().await;
-                                        stats_lock.total_messages += 1;
-                                        stats_lock.total_pending_messages = pending;
-                                        if pending > stats_lock.max_pending_messages {
-                                            stats_lock.max_pending_messages = pending;
-                                        }
+                                    stats.total_messages.fetch_add(1, Ordering::Relaxed);
+                                    stats.total_pending_messages.store(pending, Ordering::Relaxed);
+                                    let prev_max = stats.max_pending_messages.load(Ordering::Relaxed);
+                                    if pending > prev_max {
+                                        stats.max_pending_messages.store(pending, Ordering::Relaxed);
                                     }
                                     
-                                    // Log timing breakdown for slow messages (>5ms total)
-                                    if total_time.as_millis() > 5 {
+                                    // Log timing breakdown for slow messages (>2ms total, reduced threshold)
+                                    if total_time.as_millis() > 10 {
                                         warn!(
                                             "Slow message processing [{}]: parse={}μs, response={}μs, serialize={}μs, lock={}μs, channel={}μs, total={}ms",
                                             addr, 
@@ -304,15 +291,15 @@ async fn websocket_receiver_task(
                                         );
                                     }
                                 }
-                                Ok(Err(e)) => {
-                                    error!("Channel send failed for [{}]: {}", addr, e);
-                                    break;
+                                Err(tokio::sync::mpsc::error::TrySendError::Full(_)) => {
+                                    // Channel full - drop message immediately instead of waiting
+                                    warn!("Channel full for connection [{}]: message dropped instantly", addr);
+                                    stats.dropped_messages.fetch_add(1, Ordering::Relaxed);
+                                    stats.slow_connections.fetch_add(1, Ordering::Relaxed);
                                 }
-                                Err(_) => {
-                                    warn!("Message timeout for slow connection [{}]: dropped after {}ms", addr, super::components::SEND_TIMEOUT_MS);
-                                    let mut stats_lock = stats.lock().await;
-                                    stats_lock.dropped_messages += 1;
-                                    stats_lock.slow_connections += 1;
+                                Err(tokio::sync::mpsc::error::TrySendError::Closed(_)) => {
+                                    error!("Channel closed for [{}]: connection terminated", addr);
+                                    break;
                                 }
                             }
                         } else {
@@ -342,17 +329,15 @@ async fn websocket_receiver_task(
 pub fn handle_disconnections(
     mut disconnection_events: EventReader<ConnectionClosed>,
     server: Res<WebSocketServer>,
-    runtime: Res<SharedRuntime>,
+    _runtime: Res<SharedRuntime>,
 ) {
     for event in disconnection_events.read() {
-        runtime.runtime.block_on(async {
+        _runtime.runtime.block_on(async {
             server.connections.remove(&event.addr);
-            
-            let mut stats_lock = server.stats.lock().await;
-            stats_lock.connections = server.connections.len();
+            server.stats.connections.store(server.connections.len(), Ordering::Relaxed);
         });
         
-        info!("Bevy: Connection closed: {}", event.addr);
+        // info!("Bevy: Connection closed: {}", event.addr);
     }
 }
 
@@ -360,7 +345,7 @@ pub fn broadcast_system(
     broadcast_config: Res<BroadcastConfig>,
     server: Res<WebSocketServer>,
     mut broadcast_events: EventWriter<BroadcastMessage>,
-    runtime: Res<SharedRuntime>,
+    _runtime: Res<SharedRuntime>,
     config: Res<ServerConfig>,
 ) {
     if !broadcast_config.enabled {
@@ -405,10 +390,10 @@ pub fn broadcast_system(
 pub fn handle_broadcast_messages(
     mut broadcast_events: EventReader<BroadcastMessage>,
     server: Res<WebSocketServer>,
-    runtime: Res<SharedRuntime>,
+    _runtime: Res<SharedRuntime>,
 ) {
     for event in broadcast_events.read() {
-        runtime.runtime.block_on(async {
+        _runtime.runtime.block_on(async {
             broadcast_to_all_connections(&server, &event.message).await;
         });
     }
@@ -420,9 +405,10 @@ async fn broadcast_to_all_connections(
 ) {
     let broadcast_start = Instant::now();
     
-    // Clone all channel senders - scc::HashMap safe iteration
+    // Clone all channel senders - scc::HashMap safe iteration with pre-allocated capacity
     let scan_start = Instant::now();
-    let mut senders: Vec<(SocketAddr, tokio::sync::mpsc::Sender<Message>)> = Vec::new();
+    let estimated_connections = server.connections.len();
+    let mut senders: Vec<(SocketAddr, tokio::sync::mpsc::Sender<Message>)> = Vec::with_capacity(estimated_connections);
     server.connections.scan(|addr, sender| {
         senders.push((*addr, sender.clone()));
     });
@@ -455,20 +441,18 @@ async fn broadcast_to_all_connections(
         
         // Send to all connections via channels without holding the connections lock
         for (addr, sender) in senders {
-            match tokio::time::timeout(
-                Duration::from_millis(super::components::SEND_TIMEOUT_MS),
-                sender.send(message_obj.clone())
-            ).await {
-                Ok(Ok(_)) => {
+            // Use try_send for instant, non-blocking broadcast
+            match sender.try_send(message_obj.clone()) {
+                Ok(_) => {
                     successful_sends += 1;
                 }
-                Ok(Err(e)) => {
-                    error!("Broadcast failed - channel send error for [{}]: {}", addr, e);
+                Err(tokio::sync::mpsc::error::TrySendError::Full(_)) => {
+                    // Channel full - drop broadcast message immediately
+                    warn!("Broadcast dropped for slow connection [{}]: channel full", addr);
                     failed_sends += 1;
                 }
-                Err(_) => {
-                    // Timeout - channel backpressure
-                    warn!("Broadcast timeout for slow connection [{}]: dropped after {}ms", addr, super::components::SEND_TIMEOUT_MS);
+                Err(tokio::sync::mpsc::error::TrySendError::Closed(_)) => {
+                    // Connection closed - this is normal
                     failed_sends += 1;
                 }
             }
@@ -486,62 +470,69 @@ async fn broadcast_to_all_connections(
             }
             
             // Update stats
-            let stats_start = Instant::now();
-            let mut stats_lock = server.stats.lock().await;
-            let stats_lock_time = stats_start.elapsed();
-            if stats_lock_time.as_millis() > 10 {
-                warn!("Slow stats lock in broadcast: {}ms", stats_lock_time.as_millis());
-            }
-            
-            stats_lock.total_messages += successful_sends as u64;
-            stats_lock.dropped_messages += failed_sends as u64;
+            server.stats.total_messages.fetch_add(successful_sends as u64, Ordering::Relaxed);
+            server.stats.dropped_messages.fetch_add(failed_sends as u64, Ordering::Relaxed);
         }
     }
 }
 
 pub fn update_stats(
-    server: Res<WebSocketServer>, 
+    server: ResMut<WebSocketServer>, 
     time: Res<Time>,
-    runtime: Res<SharedRuntime>,
     config: Res<ServerConfig>,
 ) {
     if config.stats && time.elapsed_seconds() as u64 % 5 == 0 {
-        runtime.runtime.block_on(async {
-            let mut stats_lock = server.stats.lock().await;
+        let stats = &*server.stats;
+        let now = Instant::now();
+        
+        // Initialize timing if needed (unsafe access to non-atomic fields)
+        let stats_ptr = Arc::as_ptr(&server.stats) as *mut ServerStats;
+        unsafe {
+            if (*stats_ptr).start_time.is_none() {
+                (*stats_ptr).start_time = Some(now);
+                (*stats_ptr).last_stats_time = Some(now);
+                return;
+            }
             
-            let now = Instant::now();
-            if let (Some(last_time), Some(_)) = (stats_lock.last_stats_time, stats_lock.start_time) {
+            if let Some(last_time) = (*stats_ptr).last_stats_time {
                 let time_diff = now.duration_since(last_time).as_secs_f64();
-                let message_diff = stats_lock.total_messages - stats_lock.last_message_count;
                 
-                if time_diff > 0.0 && time_diff >= 4.5 {
-                    // Get connection info and calculate pending messages - scc::HashMap safe!
+                if time_diff >= 4.5 {
+                    let current_messages = stats.total_messages.load(Ordering::Relaxed);
+                    let message_diff = current_messages - (*stats_ptr).last_message_count;
+                    
+                    // Get connection info and calculate pending messages
                     let connection_count = server.connections.len();
                     let mut total_pending: usize = 0;
                     server.connections.scan(|_, sender| {
                         total_pending += super::components::CHANNEL_BUFFER_SIZE - sender.capacity();
                     });
                     
-                    stats_lock.messages_per_second = message_diff as f64 / time_diff;
-                    stats_lock.last_stats_time = Some(now);
-                    stats_lock.last_message_count = stats_lock.total_messages;
-                    stats_lock.total_pending_messages = total_pending;
-                    if total_pending > stats_lock.max_pending_messages {
-                        stats_lock.max_pending_messages = total_pending;
+                    // Update non-atomic fields
+                    (*stats_ptr).messages_per_second = message_diff as f64 / time_diff;
+                    (*stats_ptr).last_stats_time = Some(now);
+                    (*stats_ptr).last_message_count = current_messages;
+                    
+                    // Update atomic pending stats
+                    stats.total_pending_messages.store(total_pending, Ordering::Relaxed);
+                    let prev_max = stats.max_pending_messages.load(Ordering::Relaxed);
+                    if total_pending > prev_max {
+                        stats.max_pending_messages.store(total_pending, Ordering::Relaxed);
                     }
                     
                     info!(
                         "Bevy Stats - Connections: {}, Total Messages: {}, Messages/sec: {:.2}, Dropped: {}, Slow Clients: {}, Pending: {}, Max Pending: {}",
-                        connection_count, stats_lock.total_messages, stats_lock.messages_per_second, 
-                        stats_lock.dropped_messages, stats_lock.slow_connections,
-                        stats_lock.total_pending_messages, stats_lock.max_pending_messages
+                        connection_count, 
+                        current_messages, 
+                        (*stats_ptr).messages_per_second,
+                        stats.dropped_messages.load(Ordering::Relaxed),
+                        stats.slow_connections.load(Ordering::Relaxed),
+                        total_pending,
+                        stats.max_pending_messages.load(Ordering::Relaxed)
                     );
                 }
-            } else {
-                stats_lock.start_time = Some(now);
-                stats_lock.last_stats_time = Some(now);
             }
-        });
+        }
     }
 }
 

@@ -1,24 +1,37 @@
-FROM --platform=linux/arm64 rustlang/rust:nightly-slim as builder
+FROM rustlang/rust:nightly-slim AS builder
 
 WORKDIR /app
 
-# Install dependencies for cross-compilation and linking
+# Install dependencies
 RUN apt-get update && apt-get install -y \
     pkg-config \
     libssl-dev \
+    libasound2-dev \
+    libudev-dev \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy manifest files
-COPY Cargo.toml ./
 
-# Copy source code
-COPY src/ ./src/
+# Copy Cargo files first for better caching
+COPY Cargo.toml Cargo.lock ./
 
-# Build the bevy-server binary for ARM64
+# Create dummy main to cache dependencies
+RUN mkdir src && echo "fn main() {}" > src/main.rs
+RUN cargo build --release --bin bevy-server; rm -rf src
+
+# Now copy actual source and build
+COPY src ./src
+
+# Build with faster settings
+ENV CARGO_BUILD_JOBS=8
+ENV CARGO_PROFILE_RELEASE_DEBUG=false
+ENV CARGO_PROFILE_RELEASE_STRIP=true
+ENV CARGO_PROFILE_RELEASE_LTO=false
+ENV CARGO_PROFILE_RELEASE_CODEGEN_UNITS=16
+ENV CARGO_PROFILE_RELEASE_OPT_LEVEL=2
 RUN cargo build --release --bin bevy-server
 
 # Runtime stage
-FROM --platform=linux/arm64 debian:bookworm-slim
+FROM debian:bookworm-slim
 
 # Install runtime dependencies
 RUN apt-get update && apt-get install -y \

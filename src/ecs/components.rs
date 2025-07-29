@@ -2,15 +2,14 @@ use bevy::prelude::*;
 use std::net::SocketAddr;
 use std::sync::Arc;
 use std::time::Instant;
-use tokio::sync::Mutex;
 use tokio_tungstenite::tungstenite::Message;
 use tokio::net::TcpListener;
 use serde::{Deserialize, Serialize};
+use std::sync::atomic::{AtomicUsize, AtomicU64};
 use scc::HashMap as SccHashMap;
 
-// Configuration constants for bounded channels - optimized for 20Hz messaging with high latency
-pub const CHANNEL_BUFFER_SIZE: usize = 50;   // ~2.5s buffer at 20Hz (handles 500ms+ delays)
-pub const SEND_TIMEOUT_MS: u64 = 5;          // Very short timeout - let channel handle backpressure
+// Configuration constants for bounded channels - optimized for low latency
+pub const CHANNEL_BUFFER_SIZE: usize = 200;  // Larger buffer to reduce contention
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct BenchmarkMessage {
@@ -25,24 +24,42 @@ pub struct BenchmarkMessage {
     pub server_timestamp: Option<u64>,
 }
 
-#[derive(Resource, Debug, Default)]
+#[derive(Resource, Debug)]
 pub struct ServerStats {
-    pub connections: usize,
-    pub total_messages: u64,
-    pub messages_per_second: f64,
+    pub connections: AtomicUsize,
+    pub total_messages: AtomicU64,
+    pub dropped_messages: AtomicU64,
+    pub slow_connections: AtomicU64,
+    pub total_pending_messages: AtomicUsize,
+    pub max_pending_messages: AtomicUsize,
+    // Fields below are updated/read only in update_stats system:
     pub start_time: Option<Instant>,
     pub last_stats_time: Option<Instant>,
+    pub messages_per_second: f64,
     pub last_message_count: u64,
-    pub dropped_messages: u64,
-    pub slow_connections: u64,
-    pub total_pending_messages: usize,
-    pub max_pending_messages: usize,
+}
+
+impl Default for ServerStats {
+    fn default() -> Self {
+        Self {
+            connections: AtomicUsize::new(0),
+            total_messages: AtomicU64::new(0),
+            dropped_messages: AtomicU64::new(0),
+            slow_connections: AtomicU64::new(0),
+            total_pending_messages: AtomicUsize::new(0),
+            max_pending_messages: AtomicUsize::new(0),
+            start_time: None,
+            last_stats_time: None,
+            messages_per_second: 0.0,
+            last_message_count: 0,
+        }
+    }
 }
 
 #[derive(Resource)]
 pub struct WebSocketServer {
     pub connections: Arc<SccHashMap<SocketAddr, tokio::sync::mpsc::Sender<Message>>>,
-    pub stats: Arc<Mutex<ServerStats>>,
+    pub stats: Arc<ServerStats>,
     pub listener: Option<TcpListener>,
 }
 
@@ -50,7 +67,7 @@ impl WebSocketServer {
     pub fn new() -> Self {
         Self {
             connections: Arc::new(SccHashMap::new()),
-            stats: Arc::new(Mutex::new(ServerStats::default())),
+            stats: Arc::new(ServerStats::default()),
             listener: None,
         }
     }
